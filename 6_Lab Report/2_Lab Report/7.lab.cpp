@@ -1,0 +1,1 @@
+/*7. Write a C++ program to count the total number of even and odd elements in an array. */
