@@ -4,14 +4,14 @@ using namespace std;
 //Create Base class 
 class Shape
 {
-    protected:
+    public:
         double radius;
         double length;
         double width;
 
 };
 //class
-class Circle : private Shape
+class Circle : public Shape
 {
     public:
         Circle(double r)
@@ -25,7 +25,7 @@ class Circle : private Shape
 };
 
 //Rectangle
-class Rectangle : private Shape
+class Rectangle : public Shape
 {
     public:
         Rectangle(double l, double w)

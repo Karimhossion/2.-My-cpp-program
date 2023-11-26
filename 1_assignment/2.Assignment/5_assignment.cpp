@@ -6,71 +6,71 @@ total number of fruits in the basket.*/
 #include <iostream>
 using namespace std;
 
-class Apple
+class Apples
 {
 private:
-    int appleNumber;
+    int applesNumber;
 
 public:
-    void setApple(int a)
+    void setApples(int a)
     {
-        appleNumber = a;
+        applesNumber = a;
     }
-    int totalApple()
+    int totalApples()
     {
-        return appleNumber;
+        return applesNumber;
     }
 };
 
-class Mango
+class Mangoes
 {
 
 private:
-    int mangoNumber;
+    int mangoesNumber;
 
 public:
-    void setMango(int m)
+    void setMangoes(int m)
     {
-        mangoNumber = m;
+        mangoesNumber = m;
     }
-    int totalMango()
+    int totalMangoes()
     {
-        return mangoNumber;
+        return mangoesNumber;
     }
 };
-class Fruit : public Apple, public Mango
+class Fruit : public Apples, public Mangoes
 {
 private:
     int num;
 
 public:
-    void putApple(int applex)
+    void putApples(int a)
     {
-        setApple(applex);
+        setApples(a);
     }
-    void putMango(int mangox)
+    void putMangoes(int m)
     {
-        setMango(mangox);
+        setMangoes(m);
     }
     int totalFruit()
     {
-        return totalApple() + totalMango();
+        return totalApples() + totalMangoes();
     }
 };
 int main()
 {
 
     Fruit basket;
-    int apple, mango;
+    int apples, mangoes;
     cout << "Number of Apple: ";
-    cin >> apple;
+    cin >> apples;
     cout << "Number of Mango: ";
-    cin >> mango;
-    basket.putApple(apple);
-    basket.putMango(mango);
+    cin >> mangoes;
+    basket.putApples(apples);
+    basket.putMangoes(mangoes);
 
-    cout << "Apple: " << basket.totalApple() << endl;
-    cout << "Mango: " << basket.totalMango() << endl;
+    cout << "Apple: " << basket.totalApples() << endl;
+    cout << "Mango: " << basket.totalMangoes() << endl;
     cout << "the total number of fruits in the basket: " << basket.totalFruit() << endl;
     return 0;
 }

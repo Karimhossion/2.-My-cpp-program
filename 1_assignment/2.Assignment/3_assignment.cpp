@@ -6,24 +6,24 @@ Car and Bike. Add additional features specific to each derived class.
 using namespace std;
 class Vehicle
 {
+    private:
+        int speed;
+        string color;
 
-    int speed;
-    string color;
-
-public:
-    void setValue(string c, int s)
-    {
+    public:
+        void setValue(string c, int s)
+        {
         speed = s;
         color = c;
-    }
-    int getSpeed()
-    {
+        }
+        int getSpeed()
+        {
         return speed;
-    }
-    string getColor()
-    {
+        }
+        string getColor()
+        {
         return color;
-    }
+        }
 };
 
 class Car : public Vehicle
@@ -33,15 +33,18 @@ public:
     {
         Vehicle::setValue(c, s);
     }
+
     void start()
     {
         cout << "----Car Details:" << endl;
     }
+
     void printInfo()
     {
         cout << "Color: " << getColor() << endl;
         cout << "Speed: " << getSpeed() << endl;
     }
+    
     void stop()
     {
         cout << "Car Details End." << endl;
