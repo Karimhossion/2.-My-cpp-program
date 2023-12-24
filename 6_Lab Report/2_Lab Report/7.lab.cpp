@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int n;
-    cout<<"Enter size Array:";
+    cout<<"Enter size of Array:";
     cin>>n;
     int array[n];
     cout<<"Enter The Elements:";

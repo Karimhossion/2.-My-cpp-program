@@ -18,7 +18,7 @@ int main()
         sum+=array[i];
     }
     double average=(double)sum/n;
-    cout<<"The Average of array elements: "<<average<<endl;
+    cout<<"Average : "<<average<<endl;
 
 
     return 0;

@@ -16,7 +16,7 @@ int main()
         cin>>array[i];
         sum+=array[i];
     }
-    cout<<"Sum of array elements : "<<sum<<endl;
+    cout<<"Sum : "<<sum<<endl;
 
     return 0;
 }

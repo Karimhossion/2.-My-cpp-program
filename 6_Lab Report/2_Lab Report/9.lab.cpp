@@ -3,12 +3,9 @@ array elements in descending order where the array is passed as a parameter. Fin
 sorted array. */
 #include <iostream>
 using namespace std;
-
-// Function to sort the array in descending order using the bubble sort algorithm
 void sortElements(int arr[], int size) {
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0; j < size - i - 1; j++) {
-            // Swap elements if they are in the wrong order
             if (arr[j] < arr[j + 1]) {
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
@@ -28,12 +25,8 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> array[i];
     }
-
-    // Call the sortElements function to sort the array in descending order
     sortElements(array, n);
-
-    // Display the sorted array
-    cout << "Sorted array in descending order: ";
+    cout << "descending: ";
     for (int i = 0; i < n; i++) {
         cout << array[i] << " ";
     }

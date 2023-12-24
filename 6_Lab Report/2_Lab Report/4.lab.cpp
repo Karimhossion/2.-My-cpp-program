@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int n;
-    cout<<"Enter the size of array:";
+    cout<<"Enter size of array:";
     cin>>n;
     int array[n];
     cout<<"Enter the elements:";
@@ -12,21 +12,21 @@ int main()
     {
         cin>>array[i];
     }
-    int mx=array[0];
-    int mn=array[0];
+    int max=array[0];
+    int min=array[0];
 
     for(int i=0;i<n;i++)
     {
-        if(array[i]>mx)
+        if(array[i]>max)
         {
-            mx=array[i];
+            max=array[i];
         }
-        else if(array[i]<mn)
+        else if(array[i]<min)
         {
-            mn=array[i];
+            min=array[i];
         }
     }
-    cout<<"Maximum Element:"<<mx<<endl;
-    cout<<"Minimum Element:"<<mn<<endl;
+    cout<<"Maximum Element:"<<max<<endl;
+    cout<<"Minimum Element:"<<min<<endl;
     return 0;
 }

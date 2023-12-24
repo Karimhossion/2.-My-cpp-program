@@ -18,12 +18,14 @@ int main()
 
     for(int i=0; i<n; i++)
     {
-        if(largest<array[i]){
+        if(largest<array[i])
+        {
             secondlargest=largest;
             largest = array[i];
 
         }
-        else if (array[i] > secondlargest && array[i] != largest) {         
+        else if (array[i] > secondlargest && array[i] != largest) 
+        {         
         secondlargest = array[i];
         }
         

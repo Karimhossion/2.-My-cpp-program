@@ -1,5 +1,58 @@
-/**/
-#include<iostream>
+/*4. Write a program with four types of functions (return type and argument , return type but no argument , no 
+return type but argument, no return type and no argument) */
+
+#include <iostream>
+using namespace std;
+
+int square(int a)
+{
+    return a * a;
+}
+string getName()
+{
+    return "karim";
+}
+void printSum(int a, int b, int c)
+{
+    cout << "sum is : " << a << "+" << b << "+" << c << " = ";
+    cout << a + b + c << endl;
+}
+void putData()
+{
+    cout << "_________________________" << endl;
+}
+int main()
+{
+
+    cout << "4 Square  = " << square(4) << endl;
+    string str = getName();
+    putData();
+    cout << str << endl;
+    printSum(4, 4, 10);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#include<iostream>
 using namespace std;
 
 class LargestNumber
@@ -52,3 +105,4 @@ int main()
     // The program ends after displaying the result
     return 0;
 }
+*/
